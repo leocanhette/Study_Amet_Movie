@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1DA262D70D6EE1602A7E4CA /* Pods_Study_Amet_Movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA44048897645B67F9B1904 /* Pods_Study_Amet_Movie.framework */; };
 		B33A5A91298AC192000B515C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A5A90298AC192000B515C /* SceneDelegate.swift */; };
 		B33A5A98298AC193000B515C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33A5A97298AC193000B515C /* Assets.xcassets */; };
 		B33A5A9B298AC193000B515C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33A5A99298AC193000B515C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AFA44048897645B67F9B1904 /* Pods_Study_Amet_Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Study_Amet_Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33A5A8B298AC192000B515C /* Study_Amet_Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study_Amet_Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33A5A90298AC192000B515C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B33A5A97298AC193000B515C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B33A5A9A298AC193000B515C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B33A5A9C298AC193000B515C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEE80EAA161E1FCAEA04761 /* Pods-Study_Amet_Movie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study_Amet_Movie.release.xcconfig"; path = "Target Support Files/Pods-Study_Amet_Movie/Pods-Study_Amet_Movie.release.xcconfig"; sourceTree = "<group>"; };
+		E3E1A5DEFAF03829CD92D316 /* Pods-Study_Amet_Movie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study_Amet_Movie.debug.xcconfig"; path = "Target Support Files/Pods-Study_Amet_Movie/Pods-Study_Amet_Movie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,17 +29,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1DA262D70D6EE1602A7E4CA /* Pods_Study_Amet_Movie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50424D813F191EB8B82898B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFA44048897645B67F9B1904 /* Pods_Study_Amet_Movie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B33A5A82298AC192000B515C = {
 			isa = PBXGroup;
 			children = (
 				B33A5A8D298AC192000B515C /* Study_Amet_Movie */,
 				B33A5A8C298AC192000B515C /* Products */,
+				D8C97ABE73048C293C5E76B0 /* Pods */,
+				50424D813F191EB8B82898B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +89,16 @@
 			path = Startup;
 			sourceTree = "<group>";
 		};
+		D8C97ABE73048C293C5E76B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3E1A5DEFAF03829CD92D316 /* Pods-Study_Amet_Movie.debug.xcconfig */,
+				DBEE80EAA161E1FCAEA04761 /* Pods-Study_Amet_Movie.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +106,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B33A5A9F298AC193000B515C /* Build configuration list for PBXNativeTarget "Study_Amet_Movie" */;
 			buildPhases = (
+				27ABB63524A72CB5FF5A3FAB /* [CP] Check Pods Manifest.lock */,
 				B33A5A87298AC192000B515C /* Sources */,
 				B33A5A88298AC192000B515C /* Frameworks */,
 				B33A5A89298AC192000B515C /* Resources */,
@@ -137,6 +163,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27ABB63524A72CB5FF5A3FAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Study_Amet_Movie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B33A5A87298AC192000B515C /* Sources */ = {
@@ -279,6 +330,7 @@
 		};
 		B33A5AA0298AC193000B515C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3E1A5DEFAF03829CD92D316 /* Pods-Study_Amet_Movie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +350,7 @@
 		};
 		B33A5AA1298AC193000B515C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEE80EAA161E1FCAEA04761 /* Pods-Study_Amet_Movie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
