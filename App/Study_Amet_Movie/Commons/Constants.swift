@@ -10,4 +10,8 @@ enum Constants {
     enum Error {
         static let parsingJSONResponse = "Received different JSON structure response."
     }
+    
+    enum MovieList {
+        static let viewControllerTitle = "Filmes - Amet"
+    }
 }

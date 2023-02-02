@@ -18,6 +18,9 @@
 		B33A5A9B298AC193000B515C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33A5A99298AC193000B515C /* LaunchScreen.storyboard */; };
 		B39B910D298BFDBC00A197B9 /* UIView+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B910C298BFDBC00A197B9 /* UIView+ActivityIndicator.swift */; };
 		B39B910F298BFE1900A197B9 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B910E298BFE1900A197B9 /* UIView+Constraints.swift */; };
+		B3A76495298C599600A94133 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A76494298C599600A94133 /* Coordinator.swift */; };
+		B3A76497298C59A400A94133 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A76496298C59A400A94133 /* ApplicationCoordinator.swift */; };
+		B3A76499298C59BC00A94133 /* MovieListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A76498298C59BC00A94133 /* MovieListCoordinator.swift */; };
 		B3FFC120298ACCBB00C6BCC8 /* MovieGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC11F298ACCBB00C6BCC8 /* MovieGateway.swift */; };
 		B3FFC122298ACCCB00C6BCC8 /* MovieMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC121298ACCCB00C6BCC8 /* MovieMoyaGateway.swift */; };
 		B3FFC126298ACD0B00C6BCC8 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC125298ACD0B00C6BCC8 /* MovieService.swift */; };
@@ -42,6 +45,9 @@
 		B33A5A9C298AC193000B515C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B39B910C298BFDBC00A197B9 /* UIView+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ActivityIndicator.swift"; sourceTree = "<group>"; };
 		B39B910E298BFE1900A197B9 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		B3A76494298C599600A94133 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B3A76496298C59A400A94133 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		B3A76498298C59BC00A94133 /* MovieListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCoordinator.swift; sourceTree = "<group>"; };
 		B3FFC11F298ACCBB00C6BCC8 /* MovieGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGateway.swift; sourceTree = "<group>"; };
 		B3FFC121298ACCCB00C6BCC8 /* MovieMoyaGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMoyaGateway.swift; sourceTree = "<group>"; };
 		B3FFC125298ACD0B00C6BCC8 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 				B35AA8AD298AC21300C5B28F /* Startup */,
 				B35AA8AC298AC20500C5B28F /* Resources */,
 				B3FFC127298AD24400C6BCC8 /* Commons */,
+				B3A76493298C598C00A94133 /* Coordinator */,
 				B3FFC12A298AD5F600C6BCC8 /* Models */,
 				B3FFC11D298ACB7700C6BCC8 /* Request */,
 				B30389B5298BFA6E0059C0B4 /* Presenters */,
@@ -149,6 +156,16 @@
 				B33A5A90298AC192000B515C /* SceneDelegate.swift */,
 			);
 			path = Startup;
+			sourceTree = "<group>";
+		};
+		B3A76493298C598C00A94133 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B3A76494298C599600A94133 /* Coordinator.swift */,
+				B3A76496298C59A400A94133 /* ApplicationCoordinator.swift */,
+				B3A76498298C59BC00A94133 /* MovieListCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		B3FFC11D298ACB7700C6BCC8 /* Request */ = {
@@ -341,11 +358,14 @@
 				B30389BC298BFC2E0059C0B4 /* EmptyPresenter.swift in Sources */,
 				B3FFC130298AD83D00C6BCC8 /* MovieResultFailure.swift in Sources */,
 				B33A5A91298AC192000B515C /* SceneDelegate.swift in Sources */,
+				B3A76497298C59A400A94133 /* ApplicationCoordinator.swift in Sources */,
 				B304ECC1298C047700FE75F9 /* GetMovieSearchUseCase.swift in Sources */,
+				B3A76499298C59BC00A94133 /* MovieListCoordinator.swift in Sources */,
 				B39B910D298BFDBC00A197B9 /* UIView+ActivityIndicator.swift in Sources */,
 				B3FFC12C298AD60000C6BCC8 /* Movie.swift in Sources */,
 				B3FFC122298ACCCB00C6BCC8 /* MovieMoyaGateway.swift in Sources */,
 				B30389BE298BFC400059C0B4 /* LoadingPresenter.swift in Sources */,
+				B3A76495298C599600A94133 /* Coordinator.swift in Sources */,
 				B3FFC126298ACD0B00C6BCC8 /* MovieService.swift in Sources */,
 				B30389BA298BFC1A0059C0B4 /* MovieErrorPresenter.swift in Sources */,
 				B3FFC120298ACCBB00C6BCC8 /* MovieGateway.swift in Sources */,
