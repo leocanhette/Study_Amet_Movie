@@ -7,10 +7,10 @@ protocol LoadingPresenter: AnyObject {
 
 extension LoadingPresenter where Self: UIViewController {
     func showLoading() {
-        print("###   Loading   ###")
+        view.load()
     }
     
     func removeLoading() {
-        print("###   Remove Loading   ###")
+        view.unload()
     }
 }

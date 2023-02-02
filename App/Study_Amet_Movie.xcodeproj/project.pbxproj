@@ -15,6 +15,8 @@
 		B33A5A91298AC192000B515C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A5A90298AC192000B515C /* SceneDelegate.swift */; };
 		B33A5A98298AC193000B515C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33A5A97298AC193000B515C /* Assets.xcassets */; };
 		B33A5A9B298AC193000B515C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33A5A99298AC193000B515C /* LaunchScreen.storyboard */; };
+		B39B910D298BFDBC00A197B9 /* UIView+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B910C298BFDBC00A197B9 /* UIView+ActivityIndicator.swift */; };
+		B39B910F298BFE1900A197B9 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B910E298BFE1900A197B9 /* UIView+Constraints.swift */; };
 		B3FFC120298ACCBB00C6BCC8 /* MovieGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC11F298ACCBB00C6BCC8 /* MovieGateway.swift */; };
 		B3FFC122298ACCCB00C6BCC8 /* MovieMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC121298ACCCB00C6BCC8 /* MovieMoyaGateway.swift */; };
 		B3FFC126298ACD0B00C6BCC8 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC125298ACD0B00C6BCC8 /* MovieService.swift */; };
@@ -36,6 +38,8 @@
 		B33A5A97298AC193000B515C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B33A5A9A298AC193000B515C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B33A5A9C298AC193000B515C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39B910C298BFDBC00A197B9 /* UIView+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		B39B910E298BFE1900A197B9 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B3FFC11F298ACCBB00C6BCC8 /* MovieGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGateway.swift; sourceTree = "<group>"; };
 		B3FFC121298ACCCB00C6BCC8 /* MovieMoyaGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMoyaGateway.swift; sourceTree = "<group>"; };
 		B3FFC125298ACD0B00C6BCC8 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				B3FFC128298AD25200C6BCC8 /* Constants.swift */,
+				B39B910C298BFDBC00A197B9 /* UIView+ActivityIndicator.swift */,
+				B39B910E298BFE1900A197B9 /* UIView+Constraints.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -324,12 +330,14 @@
 				B30389BC298BFC2E0059C0B4 /* EmptyPresenter.swift in Sources */,
 				B3FFC130298AD83D00C6BCC8 /* MovieResultFailure.swift in Sources */,
 				B33A5A91298AC192000B515C /* SceneDelegate.swift in Sources */,
+				B39B910D298BFDBC00A197B9 /* UIView+ActivityIndicator.swift in Sources */,
 				B3FFC12C298AD60000C6BCC8 /* Movie.swift in Sources */,
 				B3FFC122298ACCCB00C6BCC8 /* MovieMoyaGateway.swift in Sources */,
 				B30389BE298BFC400059C0B4 /* LoadingPresenter.swift in Sources */,
 				B3FFC126298ACD0B00C6BCC8 /* MovieService.swift in Sources */,
 				B30389BA298BFC1A0059C0B4 /* MovieErrorPresenter.swift in Sources */,
 				B3FFC120298ACCBB00C6BCC8 /* MovieGateway.swift in Sources */,
+				B39B910F298BFE1900A197B9 /* UIView+Constraints.swift in Sources */,
 				B3FFC136298ADCA300C6BCC8 /* MovieError.swift in Sources */,
 				B30389B8298BFA910059C0B4 /* MovieListPresenter.swift in Sources */,
 			);
