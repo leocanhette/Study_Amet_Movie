@@ -12,6 +12,7 @@ enum Constants {
     }
     
     enum MovieList {
-        static let viewControllerTitle = "Filmes - Amet"
+        static let viewControllerTitle = "Filmes"
+        static let searchBarPlaceHolder = "Pesquisar pelo título do filme"
     }
 }

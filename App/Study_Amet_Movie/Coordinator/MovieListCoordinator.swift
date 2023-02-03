@@ -2,15 +2,14 @@ import UIKit
 
 // MARK: - Initializer
 final class MovieListCoordinator {
-    private let navigationController: UINavigationController
-    private let gateway: MovieGateway
-    
-    private lazy var viewController: UIViewController = {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .white
+    private lazy var viewController: MovieListViewController = {
+        let viewController = MovieListViewController(gateway: gateway)
         viewController.title = Constants.MovieList.viewControllerTitle
         return viewController
     }()
+    
+    private let navigationController: UINavigationController
+    private let gateway: MovieGateway
     
     init(navigationController: UINavigationController, gateway: MovieGateway) {
         self.navigationController = navigationController
