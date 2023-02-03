@@ -22,10 +22,10 @@ final class GetMovieSearchUseCase {
         }
     }
     
-    func searchMovieByName(_ queryString: String) {
+    func searchMovieByName(searchString: String) {
         presenter.showLoading()
         
-        gateway.searchMovieByTitle(queryString: queryString, page: page) { [weak self] result in
+        gateway.searchMovieByTitle(queryString: searchString, page: page) { [weak self] result in
             switch result {
             case .success(let result):
                 self?.onSuccess(result)
