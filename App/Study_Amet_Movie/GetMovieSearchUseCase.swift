@@ -41,7 +41,7 @@ final class GetMovieSearchUseCase {
 private extension GetMovieSearchUseCase {
     func onSuccess(_ result: MovieResult) {
         if !result.movies.isEmpty {
-            presenter.show(movies: result.movies)
+            presenter.show(movies: result.movies.map(MovieViewModel.init))
         } else {
             presenter.showEmpty()
         }

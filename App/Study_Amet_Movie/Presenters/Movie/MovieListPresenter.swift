@@ -1,3 +1,3 @@
 protocol MovieListPresenter: MovieErrorPresenter, EmptyPresenter, LoadingPresenter {
-    func show(movies: [Movie])
+    func show(movies: [MovieViewModeling])
 }

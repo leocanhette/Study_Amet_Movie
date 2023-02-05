@@ -4,5 +4,6 @@ target 'Study_Amet_Movie' do
 
   pod 'Moya', '~> 13.0'
   pod 'Alamofire', '~> 4.1'
+  pod 'Kingfisher', '= 4.9'
 
 end

@@ -11,16 +11,20 @@ final class MovieListViewController: UIViewController {
     
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(
+            top: 0, left: Space.base01, bottom: 0, right: Space.base01)
         let collectionView = UICollectionView(
             frame: .zero, collectionViewLayout: layout)
+        collectionView.showsVerticalScrollIndicator = false
+        collectionView.bounces = false
         collectionView.isHidden = true
+        collectionView.backgroundColor = .clear
         return collectionView
     }()
     
     private let stateView: UIView = {
         let view = UIView()
         view.backgroundColor = .systemTeal
-        
         return view
     }()
     
@@ -29,6 +33,9 @@ final class MovieListViewController: UIViewController {
         stackView.axis = .vertical
         return stackView
     }()
+    
+    private lazy var dataSource = MovieListDataSource(
+        collectionView: collectionView, cellsPerRow: 2)
     
     private lazy var searchUseCase = GetMovieSearchUseCase(
         gateway: gateway,
@@ -52,6 +59,7 @@ extension MovieListViewController {
         super.viewDidLoad()
         
         // TODO: stateView.update(state: .initial)
+        searchUseCase.searchPopularMovies()
     }
     
     override func loadView() {
@@ -97,8 +105,8 @@ private extension MovieListViewController {
     }
     
     func showCollectionView(_ show: Bool) {
-        collectionView.isHidden = !show
         stateView.isHidden = show
+        collectionView.isHidden = !show
     }
     
     func hideKeyboardWhenTappedAround() {
@@ -130,10 +138,8 @@ extension MovieListViewController: UISearchBarDelegate {
 
 // MARK: - Extension MovieListPresenter
 extension MovieListViewController: MovieListPresenter {
-    func show(movies: [Movie]) {
-        // TODO: dataSource.update(movies: movies)
-        
-        print("Filmes: \(movies.count)")
+    func show(movies: [MovieViewModeling]) {
+        dataSource.setup(movies: movies)
         showCollectionView(true)
     }
     
