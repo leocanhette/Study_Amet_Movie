@@ -1,10 +1,12 @@
+import Kingfisher
 import UIKit
 
 // MARK: - Initializer
 final class MovieCollectionCell: UICollectionViewCell, Reusable {
-    private lazy var posterPathImageView: UIImageView = {
+    private let posterImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 10
         return imageView
     }()
     
@@ -16,10 +18,16 @@ final class MovieCollectionCell: UICollectionViewCell, Reusable {
     
     @available(*, unavailable)
     required init?(coder: NSCoder) { nil }
-    
-    
-    func setup(_ posterPath: String) {
-        
+}
+
+// MARK: - Internal Methods
+extension MovieCollectionCell {
+    func setup(viewModel: MovieViewModeling) {
+        if let posterURL = viewModel.posterURL {
+            posterImageView.kf.setImage(with: posterURL)
+        } else {
+            posterImageView.image = UIImage(named: "no_image_available")
+        }
     }
 }
 
@@ -27,11 +35,11 @@ final class MovieCollectionCell: UICollectionViewCell, Reusable {
 // MARK: - Private Methods
 private extension MovieCollectionCell {
     func setupConstraint() {
-        addSubview(posterPathImageView, constraints: [
-            posterPathImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            posterPathImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            posterPathImageView.topAnchor.constraint(equalTo: topAnchor),
-            posterPathImageView.bottomAnchor.constraint(equalTo: bottomAnchor)
+        addSubview(posterImageView, constraints: [
+            posterImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            posterImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            posterImageView.topAnchor.constraint(equalTo: topAnchor),
+            posterImageView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
 }

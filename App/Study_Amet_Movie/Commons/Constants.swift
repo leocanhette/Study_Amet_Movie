@@ -6,6 +6,8 @@ enum Constants {
         
         static let searchPopularMoviesPath = "/movie/popular"
         static let searchMovieByNamePath = "/search/movie"
+        
+        static let baseURLPosterImage = "https://image.tmdb.org/t/p/w154"        
     }
     enum Error {
         static let parsingJSONResponse = "Received different JSON structure response."
