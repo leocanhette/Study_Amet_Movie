@@ -22,11 +22,7 @@ final class MovieListViewController: UIViewController {
         return collectionView
     }()
     
-    private let stateView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemTeal
-        return view
-    }()
+    private let stateView = MovieViewStateView(viewState: .initial)
     
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [collectionView, stateView])
@@ -53,15 +49,10 @@ final class MovieListViewController: UIViewController {
     required init?(coder: NSCoder) { nil }
 }
 
+
+
 // MARK: - Lifecycles
 extension MovieListViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // TODO: stateView.update(state: .initial)
-        searchUseCase.searchPopularMovies()
-    }
-    
     override func loadView() {
         super.loadView()
         
@@ -144,16 +135,12 @@ extension MovieListViewController: MovieListPresenter {
     }
     
     func show(error: MovieError) {
-        // TODO: stateView.update(state: .error(error.errorDescription))
-        
-        print("Error: \(error.errorDescription)")
+        stateView.setup(viewState: .error(description: error.errorDescription))
         showCollectionView(false)
     }
     
     func showEmpty() {
-        // TODO: stateView.update(state: .empty)
-        
-        print("###  Empty  ###")
+        stateView.setup(viewState: .empty)
         showCollectionView(false)
     }
 }

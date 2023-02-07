@@ -19,6 +19,9 @@
 		B33A5A9B298AC193000B515C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33A5A99298AC193000B515C /* LaunchScreen.storyboard */; };
 		B367FEF8298D31F100B555EC /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367FEF7298D31F100B555EC /* MovieListViewController.swift */; };
 		B367FEFA298D496600B555EC /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367FEF9298D496600B555EC /* Space.swift */; };
+		B3883A26299109C0000C30A5 /* MovieViewStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3883A25299109C0000C30A5 /* MovieViewStateView.swift */; };
+		B3883A2829910A08000C30A5 /* MovieViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3883A2729910A08000C30A5 /* MovieViewState.swift */; };
+		B3883A2A2991161F000C30A5 /* NSLayoutConstraint+Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3883A292991161F000C30A5 /* NSLayoutConstraint+Priority.swift */; };
 		B39B910D298BFDBC00A197B9 /* UIView+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B910C298BFDBC00A197B9 /* UIView+ActivityIndicator.swift */; };
 		B39B910F298BFE1900A197B9 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B910E298BFE1900A197B9 /* UIView+Constraints.swift */; };
 		B3A76495298C599600A94133 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A76494298C599600A94133 /* Coordinator.swift */; };
@@ -53,6 +56,9 @@
 		B33A5A9C298AC193000B515C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B367FEF7298D31F100B555EC /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		B367FEF9298D496600B555EC /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		B3883A25299109C0000C30A5 /* MovieViewStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewStateView.swift; sourceTree = "<group>"; };
+		B3883A2729910A08000C30A5 /* MovieViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewState.swift; sourceTree = "<group>"; };
+		B3883A292991161F000C30A5 /* NSLayoutConstraint+Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Priority.swift"; sourceTree = "<group>"; };
 		B39B910C298BFDBC00A197B9 /* UIView+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ActivityIndicator.swift"; sourceTree = "<group>"; };
 		B39B910E298BFE1900A197B9 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B3A76494298C599600A94133 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				B319D778298D6ADE00CABBF9 /* Cells */,
+				B3883A2429910961000C30A5 /* States */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 				B35AA8AD298AC21300C5B28F /* Startup */,
 				B35AA8AC298AC20500C5B28F /* Resources */,
 				B3FFC127298AD24400C6BCC8 /* Commons */,
+				B36A51CF299276C300E82C0F /* Extensions */,
 				B3A76493298C598C00A94133 /* Coordinator */,
 				B3FFC12A298AD5F600C6BCC8 /* Models */,
 				B3C8E10D298FD98300118C7E /* ViewModels */,
@@ -198,6 +206,25 @@
 				B367FEF7298D31F100B555EC /* MovieListViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B36A51CF299276C300E82C0F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3F87587298E8AC100604AC4 /* UICollectionView+Reusable.swift */,
+				B3883A292991161F000C30A5 /* NSLayoutConstraint+Priority.swift */,
+				B39B910C298BFDBC00A197B9 /* UIView+ActivityIndicator.swift */,
+				B39B910E298BFE1900A197B9 /* UIView+Constraints.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B3883A2429910961000C30A5 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				B3883A25299109C0000C30A5 /* MovieViewStateView.swift */,
+			);
+			path = States;
 			sourceTree = "<group>";
 		};
 		B3A76493298C598C00A94133 /* Coordinator */ = {
@@ -263,11 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				B3FFC128298AD25200C6BCC8 /* Constants.swift */,
-				B39B910C298BFDBC00A197B9 /* UIView+ActivityIndicator.swift */,
-				B39B910E298BFE1900A197B9 /* UIView+Constraints.swift */,
 				B367FEF9298D496600B555EC /* Space.swift */,
 				B3F87582298E85FF00604AC4 /* Reusable.swift */,
-				B3F87587298E8AC100604AC4 /* UICollectionView+Reusable.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -279,6 +303,7 @@
 				B3FFC12D298AD61700C6BCC8 /* MovieResult.swift */,
 				B3FFC12F298AD83D00C6BCC8 /* MovieResultFailure.swift */,
 				B3FFC135298ADCA300C6BCC8 /* MovieError.swift */,
+				B3883A2729910A08000C30A5 /* MovieViewState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -417,12 +442,15 @@
 				B319D77A298D6AEB00CABBF9 /* MovieCollectionCell.swift in Sources */,
 				B3FFC12E298AD61700C6BCC8 /* MovieResult.swift in Sources */,
 				B3FFC129298AD25200C6BCC8 /* Constants.swift in Sources */,
+				B3883A26299109C0000C30A5 /* MovieViewStateView.swift in Sources */,
 				B367FEFA298D496600B555EC /* Space.swift in Sources */,
 				B30389BC298BFC2E0059C0B4 /* EmptyPresenter.swift in Sources */,
 				B3FFC130298AD83D00C6BCC8 /* MovieResultFailure.swift in Sources */,
+				B3883A2829910A08000C30A5 /* MovieViewState.swift in Sources */,
 				B33A5A91298AC192000B515C /* SceneDelegate.swift in Sources */,
 				B3A76497298C59A400A94133 /* ApplicationCoordinator.swift in Sources */,
 				B304ECC1298C047700FE75F9 /* GetMovieSearchUseCase.swift in Sources */,
+				B3883A2A2991161F000C30A5 /* NSLayoutConstraint+Priority.swift in Sources */,
 				B3A76499298C59BC00A94133 /* MovieListCoordinator.swift in Sources */,
 				B39B910D298BFDBC00A197B9 /* UIView+ActivityIndicator.swift in Sources */,
 				B3F87586298E88AE00604AC4 /* MovieListDataSource.swift in Sources */,
