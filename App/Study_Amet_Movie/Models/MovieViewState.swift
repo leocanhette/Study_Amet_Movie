@@ -9,20 +9,20 @@ extension MovieViewState {
     var title: String {
         switch self {
         case .initial:
-            return "Pesquisa por título"
+            return R.string.movieViewState.titleInitial()
         case .empty:
-            return "Nenhum resultado encontrado"
+            return R.string.movieViewState.titleEmpty()
         case .error:
-            return "Falha na tentativa"
+            return R.string.movieViewState.titleError()
         }
     }
     
     var subtitle: String {
         switch self {
         case .initial:
-            return "Pesquise seus filmes favoritos por parte do título ou pelo título completo."
+            return R.string.movieViewState.subtitleInitial()
         case .empty:
-            return "Nenhum filme encontrado com o título pesquisado."
+            return R.string.movieViewState.subtitleEmpty()
         case .error(let description):
             return description
         }

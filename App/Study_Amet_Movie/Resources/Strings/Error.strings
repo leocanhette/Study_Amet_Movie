@@ -1,0 +1,3 @@
+"invalidBaseURL"            = "baseURL could not be configured.";
+"parsingJSONResponse"       = "Received different JSON structure response.";
+"dequeueReusableCell"       = "Could not dequeue cell with identifier: %@ .";
