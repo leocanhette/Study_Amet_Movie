@@ -1,10 +1,14 @@
 target 'Study_Amet_Movie' do
-
   use_frameworks!
 
   pod 'Moya', '~> 13.0'
   pod 'Alamofire', '~> 4.1'
-  pod 'Kingfisher', '= 4.9'
-  pod 'R.swift', '~> 5.0'
+  pod 'Kingfisher', '~> 4.9'
+  pod 'R.swift', '~> 5'
+
+  target 'Study_Amet_MovieUnitTests' do
+    pod 'Quick', ‘~> 5.0’
+    pod 'Nimble', ’~> 10.0’
+  end
 
 end

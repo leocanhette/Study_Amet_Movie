@@ -38,6 +38,26 @@
                ReferencedContainer = "container:Study_Amet_Movie.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B326A1CE2996E47300804AB8"
+               BuildableName = "MovieTests.xctest"
+               BlueprintName = "MovieTests"
+               ReferencedContainer = "container:Study_Amet_Movie.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B326A1DC2996E4E300804AB8"
+               BuildableName = "Study_Amet_MovieTests.xctest"
+               BlueprintName = "Study_Amet_MovieTests"
+               ReferencedContainer = "container:Study_Amet_Movie.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

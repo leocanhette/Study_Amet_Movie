@@ -27,7 +27,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B32A52C8299669EF00F2A412"
+               BlueprintIdentifier = "B39BD78C2996F5B60026C93A"
                BuildableName = "Study_Amet_MovieUnitTests.xctest"
                BlueprintName = "Study_Amet_MovieUnitTests"
                ReferencedContainer = "container:Study_Amet_Movie.xcodeproj">
