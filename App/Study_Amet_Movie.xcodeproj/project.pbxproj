@@ -14,6 +14,7 @@
 		B30389BE298BFC400059C0B4 /* LoadingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30389BD298BFC400059C0B4 /* LoadingPresenter.swift */; };
 		B304ECC1298C047700FE75F9 /* GetMovieSearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B304ECC0298C047700FE75F9 /* GetMovieSearchUseCase.swift */; };
 		B319D77A298D6AEB00CABBF9 /* MovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B319D779298D6AEB00CABBF9 /* MovieCollectionCell.swift */; };
+		B32A52CC299669EF00F2A412 /* Study_Amet_MovieUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A52CB299669EF00F2A412 /* Study_Amet_MovieUnitTests.swift */; };
 		B33A5A91298AC192000B515C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A5A90298AC192000B515C /* SceneDelegate.swift */; };
 		B33A5A98298AC193000B515C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33A5A97298AC193000B515C /* Assets.xcassets */; };
 		B33A5A9B298AC193000B515C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33A5A99298AC193000B515C /* LaunchScreen.storyboard */; };
@@ -45,6 +46,16 @@
 		B3FFC136298ADCA300C6BCC8 /* MovieError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC135298ADCA300C6BCC8 /* MovieError.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B32A52CE299669EF00F2A412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B33A5A83298AC192000B515C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B33A5A8A298AC192000B515C;
+			remoteInfo = Study_Amet_Movie;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AFA44048897645B67F9B1904 /* Pods_Study_Amet_Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Study_Amet_Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30389B7298BFA910059C0B4 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
@@ -53,6 +64,9 @@
 		B30389BD298BFC400059C0B4 /* LoadingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPresenter.swift; sourceTree = "<group>"; };
 		B304ECC0298C047700FE75F9 /* GetMovieSearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieSearchUseCase.swift; sourceTree = "<group>"; };
 		B319D779298D6AEB00CABBF9 /* MovieCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionCell.swift; sourceTree = "<group>"; };
+		B32A52C9299669EF00F2A412 /* Study_Amet_MovieUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Study_Amet_MovieUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32A52CB299669EF00F2A412 /* Study_Amet_MovieUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_Amet_MovieUnitTests.swift; sourceTree = "<group>"; };
+		B32A52CD299669EF00F2A412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B33A5A8B298AC192000B515C /* Study_Amet_Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study_Amet_Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33A5A90298AC192000B515C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B33A5A97298AC193000B515C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +103,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B32A52C6299669EF00F2A412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B33A5A88298AC192000B515C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,10 +165,20 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		B32A52CA299669EF00F2A412 /* Study_Amet_MovieUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B32A52CD299669EF00F2A412 /* Info.plist */,
+				B32A52CB299669EF00F2A412 /* Study_Amet_MovieUnitTests.swift */,
+			);
+			path = Study_Amet_MovieUnitTests;
+			sourceTree = "<group>";
+		};
 		B33A5A82298AC192000B515C = {
 			isa = PBXGroup;
 			children = (
 				B33A5A8D298AC192000B515C /* Study_Amet_Movie */,
+				B32A52CA299669EF00F2A412 /* Study_Amet_MovieUnitTests */,
 				B33A5A8C298AC192000B515C /* Products */,
 				D8C97ABE73048C293C5E76B0 /* Pods */,
 				50424D813F191EB8B82898B3 /* Frameworks */,
@@ -158,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				B33A5A8B298AC192000B515C /* Study_Amet_Movie.app */,
+				B32A52C9299669EF00F2A412 /* Study_Amet_MovieUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,6 +389,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B32A52C8299669EF00F2A412 /* Study_Amet_MovieUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B32A52D0299669EF00F2A412 /* Build configuration list for PBXNativeTarget "Study_Amet_MovieUnitTests" */;
+			buildPhases = (
+				B32A52C5299669EF00F2A412 /* Sources */,
+				B32A52C6299669EF00F2A412 /* Frameworks */,
+				B32A52C7299669EF00F2A412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B32A52CF299669EF00F2A412 /* PBXTargetDependency */,
+			);
+			name = Study_Amet_MovieUnitTests;
+			productName = Study_Amet_MovieUnitTests;
+			productReference = B32A52C9299669EF00F2A412 /* Study_Amet_MovieUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B33A5A8A298AC192000B515C /* Study_Amet_Movie */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B33A5A9F298AC193000B515C /* Build configuration list for PBXNativeTarget "Study_Amet_Movie" */;
@@ -386,6 +436,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					B32A52C8299669EF00F2A412 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B33A5A8A298AC192000B515C;
+					};
 					B33A5A8A298AC192000B515C = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -405,11 +459,19 @@
 			projectRoot = "";
 			targets = (
 				B33A5A8A298AC192000B515C /* Study_Amet_Movie */,
+				B32A52C8299669EF00F2A412 /* Study_Amet_MovieUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B32A52C7299669EF00F2A412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B33A5A89298AC192000B515C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,6 +550,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B32A52C5299669EF00F2A412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32A52CC299669EF00F2A412 /* Study_Amet_MovieUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B33A5A87298AC192000B515C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,6 +596,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B32A52CF299669EF00F2A412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B33A5A8A298AC192000B515C /* Study_Amet_Movie */;
+			targetProxy = B32A52CE299669EF00F2A412 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		B33A5A99298AC193000B515C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -538,6 +616,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B32A52D1299669EF00F2A412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 383BHFC3TN;
+				INFOPLIST_FILE = Study_Amet_MovieUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "leonardo-canhette.Study-Amet-MovieUnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Study_Amet_Movie.app/Study_Amet_Movie";
+			};
+			name = Debug;
+		};
+		B32A52D2299669EF00F2A412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 383BHFC3TN;
+				INFOPLIST_FILE = Study_Amet_MovieUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "leonardo-canhette.Study-Amet-MovieUnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Study_Amet_Movie.app/Study_Amet_Movie";
+			};
+			name = Release;
+		};
 		B33A5A9D298AC193000B515C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -667,7 +785,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leozin.Study-Amet-Movie";
+				PRODUCT_BUNDLE_IDENTIFIER = "leonardo-canhette.Study-Amet-Movie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -687,7 +805,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leozin.Study-Amet-Movie";
+				PRODUCT_BUNDLE_IDENTIFIER = "leonardo-canhette.Study-Amet-Movie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -697,6 +815,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B32A52D0299669EF00F2A412 /* Build configuration list for PBXNativeTarget "Study_Amet_MovieUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32A52D1299669EF00F2A412 /* Debug */,
+				B32A52D2299669EF00F2A412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B33A5A86298AC192000B515C /* Build configuration list for PBXProject "Study_Amet_Movie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
