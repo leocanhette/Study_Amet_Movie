@@ -26,7 +26,7 @@ extension MovieCollectionCell {
         if let posterURL = viewModel.posterURL {
             posterImageView.kf.setImage(with: posterURL)
         } else {
-            posterImageView.image = UIImage(named: "no_image_available")
+            posterImageView.image = R.image.no_image_available()
         }
     }
 }

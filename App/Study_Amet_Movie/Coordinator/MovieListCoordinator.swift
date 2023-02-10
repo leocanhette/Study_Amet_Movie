@@ -4,7 +4,7 @@ import UIKit
 final class MovieListCoordinator {
     private lazy var viewController: MovieListViewController = {
         let viewController = MovieListViewController(gateway: gateway)
-        viewController.title = Constants.MovieList.viewControllerTitle
+        viewController.title = R.string.movieList.viewControllerTitle()
         return viewController
     }()
     

@@ -4,7 +4,7 @@ import UIKit
 final class MovieListViewController: UIViewController {
     private lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
-        searchBar.placeholder = Constants.MovieList.searchBarPlaceHolder
+        searchBar.placeholder = R.string.movieList.searchBarPlaceHolder()
         searchBar.delegate = self
         return searchBar
     }()

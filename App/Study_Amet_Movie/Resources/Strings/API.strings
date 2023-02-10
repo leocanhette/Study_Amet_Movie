@@ -1,0 +1,8 @@
+"apiKey"                    = "f350a5f7c3ef3d8e9235fcbe68ce665c";
+"baseURL"                   = "https://api.themoviedb.org/3";
+"language"                  = "pt-BR";
+"baseURLPosterImage"        = "https://image.tmdb.org/t/p/w154%@";
+
+// Paths
+"searchPopularMoviesPath"   = "/movie/popular";
+"searchMovieByNamePath"     = "/search/movie";

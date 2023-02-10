@@ -25,7 +25,7 @@ extension MovieViewModel: MovieViewModeling {
     
     var posterURL: URL? {
         if let posterPath = model.posterPath,
-           let posterURL = URL(string: Constants.API.baseURLPosterImage + posterPath) {
+           let posterURL = URL(string: R.string.apI.baseURLPosterImage(posterPath)) {
             return posterURL
         }
         return nil

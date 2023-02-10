@@ -7,7 +7,7 @@ enum MovieError: LocalizedError {
     var errorDescription: String {
         switch self {
         case .parsingJSONResponse:
-            return Constants.Error.parsingJSONResponse
+            return R.string.error.parsingJSONResponse()
         case .error(let description):
             return description
         }

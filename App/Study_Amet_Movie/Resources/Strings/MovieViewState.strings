@@ -1,0 +1,9 @@
+// Title
+"title.initial"         = "Olá! :)";
+"title.empty"         = "Infelizmente não achamos o que você procura :(";
+"title.error"         = "Ops, ocorreu um erro :(";
+
+
+// Subtitle
+"subtitle.initial"         = "Qual filme procura? \n\n Basta digitar o título na barra de busca.";
+"subtitle.empty"         = "Tente novamente com outro título de filme.";

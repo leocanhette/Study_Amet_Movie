@@ -8,9 +8,9 @@ enum MovieService {
 
 // MARK: - Extension TargetType
 extension MovieService: Moya.TargetType {
-    var baseURL: URL {
-        guard let url = URL(string: Constants.API.baseURL) else {
-            fatalError("baseURL could not be configured.")
+    var baseURL: URL {        
+        guard let url = URL(string: R.string.apI.baseURL()) else {
+            fatalError(R.string.error.invalidBaseURL())
         }
 
         return url
@@ -19,9 +19,9 @@ extension MovieService: Moya.TargetType {
     var path: String {
         switch self {
         case .searchPopularMovies:
-            return Constants.API.searchPopularMoviesPath
+            return R.string.apI.searchPopularMoviesPath()
         case .searchMovieByName:
-            return Constants.API.searchMovieByNamePath
+            return R.string.apI.searchMovieByNamePath()
         }
     }
     
@@ -38,16 +38,16 @@ extension MovieService: Moya.TargetType {
         case .searchPopularMovies(let page):
             return .requestParameters(
                 parameters: [
-                    "api_key": Constants.API.apiKey,
-                    "language": Constants.API.language,
+                    "api_key": R.string.apI.apiKey(),
+                    "language": R.string.apI.language(),
                     "page": page
                 ],
                 encoding: URLEncoding.default)
         case .searchMovieByName(let queryString, let page):
             return .requestParameters(
                 parameters: [
-                    "api_key": Constants.API.apiKey,
-                    "language": Constants.API.language,
+                    "api_key": R.string.apI.apiKey(),
+                    "language": R.string.apI.language(),
                     "page": page,
                     "query": queryString
                 ],
