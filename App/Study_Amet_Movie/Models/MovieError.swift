@@ -1,6 +1,6 @@
 import Foundation
 
-enum MovieError: LocalizedError {
+enum MovieError: LocalizedError, Equatable {
     case parsingJSONResponse
     case error(description: String)
     

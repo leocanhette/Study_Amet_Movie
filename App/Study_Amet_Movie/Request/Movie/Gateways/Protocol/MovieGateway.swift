@@ -1,5 +1,5 @@
 protocol MovieGateway {
-    typealias MovieCompletionResult = Result<MovieResult, MovieError>
+    typealias MovieCompletionResult = Result<MovieResult>
     typealias CompletionHandler = (MovieCompletionResult) -> Void
     
     func searchPopularMovies(page: Int, completion: @escaping CompletionHandler)
